@@ -1,0 +1,73 @@
+# Hotkeys
+global_hotkey: "ctrl+shift+a" # The main hotkey to activate the application's command mode.
+record_shortcut: "r" # Hotkey to start/stop audio recording.
+cancel_record_shortcut: "c" # Hotkey to cancel the current audio recording.
+send_shortcut: "s" # Hotkey to send the recorded audio or command to the LLM.
+screenshot_shortcut: "p" # Hotkey to capture a screenshot.
+toggle_vad_shortcut: "v" # Hotkey to toggle Voice Activity Detection (VAD).
+anti_backchannel_shortcut: "b" # Hotkey to prevent backchanneling (e.g., interrupting the LLM).
+exit_command_shortcut: "esc" # Hotkey to exit command mode.
+
+# VAD (Voice Activity Detection)
+vad_aggressiveness: 3 # How aggressive the VAD is at detecting speech. Higher values mean more aggressive detection (0-3).
+vad_silence_threshold: 1.5 # Duration of silence (in seconds) to consider the end of speech.
+backchannel_duration_threshold: 1.3 # Duration (in seconds) of speech to consider it a backchannel.
+
+# System prompt
+system_prompt_file: "system_prompt.txt" # Path to the file containing the system prompt for the LLM.
+
+# Image
+auto_analyze_screenshot: false # Whether to automatically analyze screenshots. Set to true to enable, false to disable.
+image_quality: 40 # Quality of captured screenshots (0-100). Lower values mean smaller file sizes.
+
+# Debug
+log_key_registration_failures: true # Whether to log failures when registering hotkeys.
+
+# Gemini API Configuration
+gemini_api_key: "" # Your Google Gemini API key. Obtain this from the Google AI Studio.
+gemini_model_name: "gemini-2.0-flash-001" # The name of the Gemini model to use (e.g., "gemini-pro", "gemini-2.0-flash-001").
+gemini_temperature: 0.2 # Controls the randomness of the output. Higher values mean more creative responses (0.0-1.0).
+gemini_top_p: 0.85 # Nucleus sampling parameter. Considers tokens whose cumulative probability exceeds this value.
+gemini_top_k: 20 # Top-k sampling parameter. Considers the top K most likely tokens.
+gemini_candidate_count: 1 # Number of generated response candidates.
+gemini_max_output_tokens: 1024 # Maximum number of tokens to generate in the response.
+gemini_stop_sequences: ["\n###END"] # A list of sequences that will stop the generation.
+gemini_presence_penalty: 0.05 # Penalty for new tokens based on whether they appear in the text so far.
+gemini_frequency_penalty: 0.05 # Penalty for new tokens based on their frequency in the text so far.
+
+# Chat Export
+semantic_chat_export: true # Whether to export chat history with semantic information.
+
+# Overlay Configuration
+overlay:
+  opacity: 0.92 # Transparency of the overlay window (0.0-1.0).
+  font_size: 10 # Base font size for the overlay text.
+  font_scale: 1.0 # Scaling factor for the font size.
+  width: 800 # Width of the overlay window in pixels.
+  height: 500 # Height of the overlay window in pixels.
+  max_text_lines: 500 # Maximum number of lines of text to display in the overlay.
+  prune_interval_chars: 1000 # Interval in characters at which to prune old text from the overlay.
+  prune_interval_seconds: 5 # Interval in seconds at which to prune old text from the overlay.
+  max_full_buffer_size: 51200 # 50 KB # Maximum size of the full text buffer in bytes before pruning.
+  reply_markers: ["**REPLY**", "**ANSWER**"] # List of markers that indicate the start of a reply in the LLM's output.
+  show_raw_on_missing_marker: true # Whether to show raw LLM output if no reply marker is found.
+  colors: # Color scheme for the overlay.
+    background_dark: "black" # Background color in dark mode.
+    background_light: "white" # Background color in light mode.
+    text_dark: "white" # Text color in dark mode.
+    text_light: "black" # Text color in light mode.
+    status_dark: "red" # Status indicator color in dark mode.
+    status_light: "darkred" # Status indicator color in light mode.
+
+# Overlay Hotkeys
+overlay_hotkeys:
+  overlay_transparency_down: "left" # Hotkey to decrease overlay transparency.
+  overlay_transparency_up: "right" # Hotkey to increase overlay transparency.
+  overlay_invert_colors: "i" # Hotkey to invert overlay colors (toggle dark/light mode).
+  overlay_toggle_mouse_follow: "m" # Hotkey to toggle overlay following the mouse cursor.
+  overlay_toggle_visibility: "h" # Hotkey to toggle overlay visibility.
+  overlay_resize_up: "+" # Hotkey to increase overlay size.
+  overlay_resize_down: "-" # Hotkey to decrease overlay size.
+  overlay_scroll_up: "up" # Hotkey to scroll overlay content up.
+  overlay_scroll_down: "down" # Hotkey to scroll overlay content down.
+  overlay_toggle_controls: "k" # Hotkey to toggle display of overlay controls.

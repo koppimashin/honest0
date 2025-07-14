@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing and coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Sessions directory
+sessions/
+
+# Logs
+*.log
+# Custom files
+launchwithconsole.bat

@@ -1,0 +1,28 @@
+NOTICE
+
+This software includes third-party components licensed under various open source licenses.
+
+The following components are licensed under the Apache License, Version 2.0:
+
+- google-generativeai
+- google-ai-generativelanguage
+- google-api-core
+- google-api-python-client
+- google-auth
+
+Apache License, Version 2.0:
+http://www.apache.org/licenses/LICENSE-2.0
+
+These libraries are copyright their respective owners (Google and contributors)
+and are used in accordance with their license terms.
+
+---
+
+Other components in this project are licensed under permissive licenses:
+
+- tqdm — Mozilla Public License 2.0
+- PyYAML — MIT License
+- Pillow — Historical open source license (HPND-like)
+- soundcard, soundfile, keyboard, etc. — MIT/BSD/PSF
+
+See individual Python packages for full license texts.
