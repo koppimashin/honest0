@@ -50,6 +50,12 @@ Customize the app using `config.yaml`:
 
 ---
 
+## 🧪 About Development
+
+The app was developed with the assistance of **Kilocode**, leveraging the free tier of **Gemini Flash 2.5 (Thinking)**, with additional support from the free tier of **ChatGPT** during the development process.
+
+---
+
 ## 📜 License
 
 This project is licensed under the MIT License. See [LICENSE](./LICENSE).
